@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    font-family: Rubik;
+    
+    
+}
+body{
+    margin: 0;
+    background-color:hsl(0, 0%, 99%) ;
+    overflow: hidden;
+    max-width: 100%;
+    
+   
+}
+main{
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+   overflow:hidden ;
+   height: 100vh;
+   
+}
+.bg-left{
+   
+    width: 600px;
+    height: 650px;
+    border-radius: 0 0 50% 50%;
+    position: absolute; 
+    right: 71%;
+    background: linear-gradient(  to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+.container{
+    position: relative;
+    right: -14%;
+    display: flex;
+}
+.bg-right{
+    width: 600px;
+    height: 750px;
+    border-radius: 50% 50% 0 0;
+    background: hwb(287 95% 0%);
+    position: absolute;  
+     left: 75%;
+    top: 20%;
+  
+
+}
+.phone{
+    width: 250px;
+    height: 520px;
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+    z-index: 9;
+    margin-top: 5rem;
+    outline: 10px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    left: 11%;
+
+
+   
+    
+}
+
+.profile{
+    width: 100%;
+    height: 4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+
+    
+}
+.notch{
+    width:8rem;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    margin-left: 25%;
+   
+    
+    
+}
+.pro-details{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    
+}
+.pro-details i{
+    
+    color: white;
+    font-size: 1rem;
+}
+.pro-details img{
+    width: 30px;
+    margin-inline:10px ;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+.pro-details h3{
+    font-size: 16px;
+   line-height: .9;
+   font-weight: 500;
+   color: white;
+}
+.pro-details h3 span{
+    font-size: 10px;
+    margin-top: -10px;
+    color:hsl(276, 100%, 81%) ;
+}
+.menu{
+    margin-left: 3rem;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+}
+.out{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.in-coming, .out-going{
+    background-color: hsl(294, 20%, 90%);
+    padding: 10px;
+    border-radius: 10px 10px 10px 5px;
+    font-size: 10px;
+    width: 70%;
+    margin-top: 7px;
+    color:hsl(276, 55%, 52%) ;
+    font-weight: 500;
+}
+.chat .image{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.chat .image img{
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+.out-going{
+    border-radius: 10px 10px 5px 10px;
+    background-color: white;
+    color:hsl(271, 15%, 43%) ;
+}
+.price{
+    background: linear-gradient( to left,  hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 5px;
+    padding: 5px;
+    width: 90%;
+   display: flex;
+   justify-content: space-between;
+   margin-right: 10px;
+
+}
+
+.price input{
+    appearance : none;
+    border: 2px solid hsl(289, 100%, 72%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+    
+    
+}
+.price label{
+    width: 100%;
+    font-size: 15px;
+    color: hsl(275, 19%, 77%);
+}
+.price span{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: right;
+    padding-left: 4px;
+    color: white;
+}
+.type{
+    position: relative;
+}
+.type input[type="text"]{
+    margin-top: 10px;
+    width: 98%;
+    height: 2.4rem;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 1px;
+    margin-left: 1.5%;
+    background-color: white;
+    
+}
+.type button{
+    margin-left: -30px;
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsl(271, 36%, 24%);
+    position: absolute;
+    top: 12px;
+    right: 11px;
+}
+.type button{
+    color: white;
+}
+section{
+    
+    position: relative;
+    left: 14%;
+    padding: 1px;
+    padding-top:210px ;
+    
+    z-index: 9;
+    max-width: 30%;
+    
+   
+    
+}
+section h1{
+    font-size: 2em;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+section p{
+    color:hsl(270, 7%, 64%) ;
+    width: auto;
+}
+
+
+
+@media (max-width:700px) {
+    main{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column;
+        right: 25%;
+        align-items: center;
+       
+    }
+    .bg-left{
+        right: 50%;
+    }
+    .bg-right{
+        left: 50%;
+    }
+    section{
+        width: 900px;
+        text-align: center;
+        margin-right: 6%;
+        padding-top: 0;
+    }
+    main{
+        overflow-y: auto;
+    }
+}
